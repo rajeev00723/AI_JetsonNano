@@ -1,0 +1,15 @@
+import matplotlib.pyplot as plt
+import numpy as np 
+x=np.linspace(0,2*np.pi,50)
+y=np.sin(x)
+y2=np.cos(x-np.pi/4)
+plt.grid(True)
+plt.xlabel('My X Value')
+plt.ylabel('My Y Value')
+plt.title('My First Graph')
+#plt.axis([0,5,2,11])
+plt.plot(x,y,'b-^',linewidth=3, markersize=6,label='Sin(x)')
+plt.plot(x,y2,'r-^',linewidth=3, markersize=6,label='Cos(x)')
+#plt.plot(x,y3,'g-^',linewidth=3, markersize=6,label='blue line')
+plt.legend(loc='upper center')
+plt.show()
